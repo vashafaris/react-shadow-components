@@ -1,0 +1,54 @@
+{
+  "name": "react-shadow-components",
+  "author": "Vasha Farisi",
+  "version": "0.0.1",
+  "description": "A beautiful react shadow components",
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "components",
+    "ui"
+  ],
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vashafaris/react-shadow-components.git"
+  },
+  "scripts": {
+    "rollup": "rollup -c",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^16.0.0",
+    "@commitlint/config-conventional": "^16.0.0",
+    "@rollup/plugin-commonjs": "^21.0.1",
+    "@rollup/plugin-node-resolve": "^13.0.6",
+    "@rollup/plugin-typescript": "^8.3.0",
+    "@types/react": "^17.0.34",
+    "husky": "^7.0.0",
+    "lint-staged": "^12.1.4",
+    "node-sass": "^7.0.0",
+    "postcss": "^8.4.5",
+    "prettier": "^2.5.1",
+    "rollup": "^2.60.0",
+    "rollup-plugin-dts": "^4.0.1",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-terser": "^7.0.2",
+    "typescript": "^4.4.4"
+  },
+  "peerDependencies": {
+    "react": ">=17"
+  },
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts",
+  "lint-staged": {
+    "**/*.{js,jsx,ts,tsx,html,css,json}": [
+      "yarn prettier --write"
+    ]
+  }
+}
