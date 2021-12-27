@@ -1,7 +1,7 @@
 {
   "name": "react-shadow-components",
   "author": "Vasha Farisi",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A beautiful react shadow components",
   "license": "MIT",
   "keywords": [
@@ -16,29 +16,42 @@
   },
   "scripts": {
     "rollup": "rollup -c",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "devDependencies": {
+    "@babel/core": "^7.16.5",
     "@commitlint/cli": "^16.0.0",
     "@commitlint/config-conventional": "^16.0.0",
     "@rollup/plugin-commonjs": "^21.0.1",
     "@rollup/plugin-node-resolve": "^13.0.6",
     "@rollup/plugin-typescript": "^8.3.0",
+    "@storybook/addon-actions": "^6.4.9",
+    "@storybook/addon-essentials": "^6.4.9",
+    "@storybook/addon-links": "^6.4.9",
+    "@storybook/builder-webpack5": "^6.4.9",
+    "@storybook/manager-webpack5": "^6.4.9",
+    "@storybook/preset-scss": "^1.0.3",
+    "@storybook/react": "^6.4.9",
     "@types/react": "^17.0.34",
+    "babel-loader": "^8.2.3",
+    "css-loader": "^6.5.1",
     "husky": "^7.0.0",
     "lint-staged": "^12.1.4",
     "node-sass": "^7.0.0",
     "postcss": "^8.4.5",
     "prettier": "^2.5.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "rollup": "^2.60.0",
     "rollup-plugin-dts": "^4.0.1",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-postcss": "^4.0.2",
     "rollup-plugin-terser": "^7.0.2",
+    "sass-loader": "^12.4.0",
+    "style-loader": "^3.3.1",
     "typescript": "^4.4.4"
-  },
-  "peerDependencies": {
-    "react": ">=17"
   },
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
