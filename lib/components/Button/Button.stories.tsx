@@ -13,6 +13,8 @@ const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
 export const ClickMe = Template.bind({});
 ClickMe.args = {
   children: "Click Me!",
+  color: "black",
+  backgroundColor: "red",
   onClick: () => {
     console.log("Im clicked");
   },
